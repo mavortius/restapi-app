@@ -113,8 +113,17 @@
               "devServerTarget": "restapi-app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/restapi-app",
+            "netlifyToken": "e23c47ea853522f18a2d6c25a28ede3f4f347d3b514d5c22b892d95808e71d07",
+            "siteId": "7e37a9bc-163d-4b55-a812-ca86ad3be494"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "restapi-app"
 }
